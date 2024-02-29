@@ -39,7 +39,7 @@ model_name = st.selectbox(
 def null(x): return x.empty if type(x) is pd.DataFrame else not x 
 
 if model_name and not null(df):
-    model = pickle.load(open(f'{model_name}.pickle', 'rb'))
+    model = pickle.load(open(f'Labs/Lab1/{model_name}.pickle', 'rb'))
     column = "is_game_center_enabled"
     if column:
         st.markdown('Данные приняты, готовим предсказание')
