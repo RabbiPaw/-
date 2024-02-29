@@ -6,7 +6,7 @@ import pandas as pd
 st.set_page_config(page_title = "Визуализация")
 st.title('Визуализация зависимостей в наборе данных')
 
-df = pd.read_csv("df_filtered.csv")
+df = pd.read_csv("Labs/Lab1/df_filtered.csv")
 
 ########### Круговая диаграмма ###########
 st.write(df.head())
