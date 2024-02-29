@@ -14,7 +14,7 @@ if st.button('Круговая диаграмма'):
     fig, ax = plt.subplots()
     
     ax.pie(
-        x=list(df['content_advisory_rating'].value_counts()), 
+        x=list(df['is_game_center_enablade'].value_counts()), 
         labels=['4+','9+','12+','17+'],
         autopct='%1.1f%%',
         colors=['red','green','blue','yellow']
