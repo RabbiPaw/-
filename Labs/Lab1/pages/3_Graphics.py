@@ -15,9 +15,9 @@ if st.button('Круговая диаграмма'):
     
     ax.pie(
         x=list(df['is_game_center_enabled'].value_counts()), 
-        labels=['4+','9+','12+','17+'],
+        labels=['Yes','No'],
         autopct='%1.1f%%',
-        colors=['red','green','blue','yellow']
+        colors=['red','green']
     )
 
     plt.title('Круговая диаграмма статуса домов')
