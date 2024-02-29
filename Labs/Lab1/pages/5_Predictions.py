@@ -12,7 +12,7 @@ import pickle
 st.set_page_config(page_title = "Предсказание")
 st.title('Предсказание моделей')
 
-df = pd.read_csv("df_filtered.csv")
+df = pd.read_csv("Labs/Lab1/df_filtered.csv")
 
 def test_model(x, y, model,model_name, transformer = None):
     x = x if not transformer else transformer.fit_transform(x)
